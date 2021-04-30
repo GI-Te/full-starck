@@ -18,19 +18,20 @@ const Customers = () => {
           <thead>
             <tr>
               <th>NAME</th>
-              <th>HOMETOWN</th>
+              <th>location</th>
               <th>EMAIL</th>
-              <th>OCCUPATION</th>
-              <th>EDIT</th>
+              <th>service</th>
+              <th>PHONE</th>
             </tr>
           </thead>
           <tbody>
             {customers.map((customer) => (
               <tr key={customer._id}>
                 <td>{customer.name}</td>
-                <td>{customer.hometown}</td>
+                <td>{customer.location}</td>
                 <td>{customer.email}</td>
-                <td>{customer.occupation}</td>
+                <td>{customer.service}</td>
+                <td>{customer.phone}</td>
                 <td>
                   <FiDelete /> <FiEdit /> <FiEye />
                 </td>

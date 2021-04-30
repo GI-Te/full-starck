@@ -41,7 +41,8 @@ const UsersContextProvider = ({ children }) => {
         "Content-type": "application/json"
       }
     }
-    const res=await axios.post(" https://atif-restaurant-api.herokuapp.com/api/v1/users/register", 
+    const {date} = await axios.post(
+      " https://atif-restaurant-api.herokuapp.com/api/v1/users/register", 
     newuser,
     config
     );
